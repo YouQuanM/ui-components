@@ -1,0 +1,93 @@
+.my-view {
+  padding: 32px;
+}
+/** button less 控制 button 字体颜色，大小，padding，背景，边框 */
+.my-button .my-button-primary {
+  color: #398bd0;
+  background-color: #ebf3fa;
+  border-color: #b0d1ec;
+}
+.my-button .my-button-primary.is-disabled,
+.my-button .my-button-primary.is-disabled:hover,
+.my-button .my-button-primary.is-disabled:focus,
+.my-button .my-button-primary.is-disabled:active {
+  color: #88b9e3;
+  background-color: #ebf3fa;
+  border-color: #d7e8f6;
+}
+.my-button .my-button-warning {
+  color: #E6A23C;
+  background-color: #fdf6ec;
+  border-color: #f5dab1;
+}
+.my-button .my-button-warning.is-disabled,
+.my-button .my-button-warning.is-disabled:hover,
+.my-button .my-button-warning.is-disabled:focus,
+.my-button .my-button-warning.is-disabled:active {
+  color: #f0c78a;
+  background-color: #fdf6ec;
+  border-color: #faecd8;
+}
+.my-button .my-button-success {
+  color: #67C23A;
+  background-color: #f0f9eb;
+  border-color: #c2e7b0;
+}
+.my-button .my-button-success.is-disabled,
+.my-button .my-button-success.is-disabled:hover,
+.my-button .my-button-success.is-disabled:focus,
+.my-button .my-button-success.is-disabled:active {
+  color: #a4da89;
+  background-color: #f0f9eb;
+  border-color: #e1f3d8;
+}
+.my-button .my-button-danger {
+  color: #F56C6C;
+  background-color: #fef0f0;
+  border-color: #fbc4c4;
+}
+.my-button .my-button-danger.is-disabled,
+.my-button .my-button-danger.is-disabled:hover,
+.my-button .my-button-danger.is-disabled:focus,
+.my-button .my-button-danger.is-disabled:active {
+  color: #f9a7a7;
+  background-color: #fef0f0;
+  border-color: #fde2e2;
+}
+.my-button .my-button-info {
+  color: #909399;
+  background-color: #f4f4f5;
+  border-color: #d3d4d6;
+}
+.my-button .my-button-info.is-disabled,
+.my-button .my-button-info.is-disabled:hover,
+.my-button .my-button-info.is-disabled:focus,
+.my-button .my-button-info.is-disabled:active {
+  color: #bcbec2;
+  background-color: #f4f4f5;
+  border-color: #e9e9eb;
+}
+.my-button .my-button .my-button-mini {
+  padding: 7px 15px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 3px;
+}
+.my-button .my-button .my-button-small {
+  padding: 9px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 3px;
+}
+.my-button .my-button .my-button-medium {
+  padding: 10px 25px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.my-button .my-button .my-button-large {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+}

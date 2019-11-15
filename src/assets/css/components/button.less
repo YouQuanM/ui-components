@@ -1,0 +1,65 @@
+/** button less 控制 button 字体颜色，大小，padding，背景，边框 */
+@colorList: primary, warning, success, danger, info;
+@buttonColorList: @my-default-primary-color, @my-default-warning-color, @my-default-success-color, @my-default-danger-color, @my-default-info-color;
+@buttonSizeList: mini, small, medium, large;
+
+// 循环出button 颜色和 disabled 颜色
+.buttonColor(@className, @colorName) {
+  .my-button {
+    .my-button-@{className}{
+      color: @colorName;
+      background-color: mix(@my-default-white, @colorName, 90%);
+      border-color: mix(@my-default-white, @colorName, 60%);
+      &.is-disabled {
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+          color: mix(@my-default-white, @colorName, 40%);
+          background-color: mix(@my-default-white, @colorName, 90%);
+          border-color: mix(@my-default-white, @colorName, 80%);
+        }
+      }
+    }
+  }
+}
+
+// 循环出按钮size
+.buttonSize(@className, @size, @weight, @padding-x, @padding-y, @border-radius) {
+  .my-button {
+    .my-button-@{className} {
+      padding: @padding-x @padding-y;
+      font-size: @size;
+      font-weight: @weight;
+      border-radius: @border-radius;
+    }
+  }
+}
+
+.my-button(@i) when (@i < length(@colorList)+1){
+  .buttonColor(extract(@colorList, @i), extract(@buttonColorList, @i));
+  .my-button(@i+1);
+}
+
+.my-buttonSize(@n) when (@n < length(@buttonSizeList)+1){
+  .my-button when (extract(@buttonSizeList, @n) = mini) {
+    .buttonSize(extract(@buttonSizeList, @n), @my-button-mini-font, @my-button-mini-weight, @my-button-mini-padding-x, @my-button-mini-padding-y, @my-button-mini-border-radius)
+  };
+  
+  .my-button when (extract(@buttonSizeList, @n) = small) {
+    .buttonSize(extract(@buttonSizeList, @n), @my-button-small-font, @my-button-small-weight, @my-button-small-padding-x, @my-button-small-padding-y, @my-button-small-border-radius)
+  };
+  
+  .my-button when (extract(@buttonSizeList, @n) = medium) {
+    .buttonSize(extract(@buttonSizeList, @n), @my-button-medium-font, @my-button-medium-weight, @my-button-medium-padding-x, @my-button-medium-padding-y, @my-button-medium-border-radius)
+  };
+  
+  .my-button when (extract(@buttonSizeList, @n) = large) {
+    .buttonSize(extract(@buttonSizeList, @n), @my-button-large-font, @my-button-large-weight, @my-button-large-padding-x, @my-button-large-padding-y, @my-button-large-border-radius)
+  };
+
+  .my-buttonSize(@n + 1);
+}
+
+.my-button(1);
+.my-buttonSize(0);

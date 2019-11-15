@@ -1,6 +1,13 @@
 <template>
-  <div>
-    <button class="my-button">
+  <div class="my-button">
+    <button
+      :class="[
+        type ? 'my-button--' + type : '',
+        size ? 'my-button--' + size : '',
+        {
+          'is-disabled': disabled
+        }
+      ]">
        <slot></slot>
     </button>
   </div>
@@ -19,6 +26,10 @@ export default {
       default: 'middle'
     },
     disabled: {
+      type: Boolean,
+      default: false
+    },
+    loading: {
       type: Boolean,
       default: false
     }
