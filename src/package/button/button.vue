@@ -2,10 +2,11 @@
   <div class="my-button">
     <button
       :class="[
-        type ? 'my-button--' + type : '',
-        size ? 'my-button--' + size : '',
+        type ? 'my-button-' + type : '',
+        size ? 'my-button-' + size : '',
         {
-          'is-disabled': disabled
+          'is-disabled': disabled,
+          'is-round': round
         }
       ]">
        <slot></slot>
@@ -15,17 +16,19 @@
 
 <script>
 export default {
-  name: 'button',
+  name: 'my-button',
   props: {
     type: {
-      type: String,
-      default: 'primary'
+      type: String
     },
     size: {
-      type: String,
-      default: 'middle'
+      type: String
     },
     disabled: {
+      type: Boolean,
+      default: false
+    },
+    round: {
       type: Boolean,
       default: false
     },

@@ -1,0 +1,65 @@
+.my-list .my-list-item {
+  margin: 20px 0 0 0;
+  padding: 40px 32px;
+  background-color: #fff;
+}
+.my-list .my-list-item .list-item-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 30px 0;
+}
+.my-list .my-list-item .list-item-header .header-main-title-area {
+  display: flex;
+}
+.my-list .my-list-item .list-item-header .header-main-title-area .header-title {
+  margin: 0 10px 0 0;
+  font-family: PingFangSC-Regular;
+  font-size: 32px;
+  color: #333333;
+  line-height: 32px;
+}
+.my-list .my-list-item .list-item-header .header-main-title-area .header-brief {
+  font-family: PingFangSC-Regular;
+  font-size: 26px;
+  color: #666666;
+  line-height: 32px;
+}
+.my-list .my-list-item .list-item-header .header-main-status-area {
+  display: flex;
+}
+.my-list .my-list-item .list-item-header .header-main-status-area .header-status-tags {
+  margin: 0 5px 0 0;
+}
+.my-list .my-list-item .list-item-header .header-main-status-area .header-right-title {
+  font-family: PingFangSC-Light;
+  font-size: 26px;
+  color: #666666;
+  text-align: right;
+  line-height: 32px;
+}
+.my-list .my-list-item .list-item-content .content-item {
+  display: flex;
+  margin: 0 0 20px 0;
+}
+.my-list .my-list-item .list-item-content .content-item .content-title,
+.my-list .my-list-item .list-item-content .content-item .content-content {
+  font-family: PingFangSC-Regular;
+  font-size: 26px;
+  color: #666666;
+  line-height: 24px;
+}
+.my-list .my-list-item .list-item-content .content-item .content-title {
+  margin: 0 15px 0 0;
+}
+.my-list .my-list-item .list-item-content .content-item .list-icon {
+  width: 5px;
+  height: 5px;
+  margin: 0 30px 0 0;
+}
+.my-list .my-list-item .list-item-content .content-item :last-child {
+  margin: 0;
+}
+.my-list .my-list-item .list-item-content.half {
+  width: 50%;
+}

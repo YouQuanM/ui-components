@@ -2,6 +2,7 @@
 @colorList: primary, warning, success, danger, info;
 @buttonColorList: @my-default-primary-color, @my-default-warning-color, @my-default-success-color, @my-default-danger-color, @my-default-info-color;
 @buttonSizeList: mini, small, medium, large;
+@defaultBtnColor: #111111;
 
 // 循环出button 颜色和 disabled 颜色
 .buttonColor(@className, @colorName) {
@@ -15,10 +16,15 @@
         &:hover,
         &:focus,
         &:active {
-          color: mix(@my-default-white, @colorName, 40%);
-          background-color: mix(@my-default-white, @colorName, 90%);
-          border-color: mix(@my-default-white, @colorName, 80%);
+          color: mix(@my-default-white, @colorName, 50%);
+          background-color: mix(@my-default-white, @colorName, 95%);
+          border-color: mix(@my-default-white, @colorName, 85%);
         }
+      }
+      &:active {
+        color: mix(@my-default-black, @colorName, 20%);
+        border-color: mix(@my-default-white, @colorName, 40%);
+        background-color: mix(@my-default-white, @colorName, 60%);
       }
     }
   }
@@ -26,13 +32,11 @@
 
 // 循环出按钮size
 .buttonSize(@className, @size, @weight, @padding-x, @padding-y, @border-radius) {
-  .my-button {
-    .my-button-@{className} {
-      padding: @padding-x @padding-y;
-      font-size: @size;
-      font-weight: @weight;
-      border-radius: @border-radius;
-    }
+  .my-button-@{className} {
+    padding: @padding-x @padding-y;
+    font-size: @size;
+    font-weight: @weight;
+    border-radius: @border-radius;
   }
 }
 
@@ -63,3 +67,37 @@
 
 .my-button(1);
 .my-buttonSize(0);
+
+.my-button {
+  display: inline;
+  margin: 5px;
+  button {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    color: @defaultBtnColor;
+    background-color: transparent;
+    border-color: mix(@my-default-white, @defaultBtnColor, 60%);
+    &.is-disabled {
+      &,
+      &:active {
+        color: mix(@my-default-white, @defaultBtnColor, 60%);
+        background-color: mix(@my-default-white, @defaultBtnColor, 90%);
+        border-color: mix(@my-default-white, @defaultBtnColor, 80%);
+      }
+    }
+    &:active {
+      color: mix(@my-default-black, @defaultBtnColor, 20%);
+      background-color: transparent;
+      border-color: mix(@my-default-white, @defaultBtnColor, 30%);
+    }
+    padding: @my-button-small-padding-x @my-button-small-padding-y;
+    font-size: @my-button-small-font;
+    font-weight: @my-button-small-weight;
+    border-radius: @my-button-small-border-radius;
+    &.is-round {
+      border-radius: 50px;
+    }
+  }
+}
