@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 import GlobalComponent from './package'
+import './assets/css/reset.css'
 import './assets/css/components/index.css'
 Vue.use(GlobalComponent)
 
