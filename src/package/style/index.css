@@ -1,5 +1,133 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+fieldset,
+lengend,
+button,
+input,
+textarea,
+th,
+td {
+  /* table elements 表格元素 */
+  margin: 0;
+  padding: 0;
+}
+/* 设置默认字体 */
+body,
+button,
+input,
+select,
+textarea {
+  /* for ie */
+  /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+  font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+h1 {
+  font-size: 18px;
+  /* 18px / 12px = 1.5 */
+}
+h2 {
+  font-size: 16px;
+}
+h3 {
+  font-size: 14px;
+}
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+address,
+cite,
+dfn,
+em,
+var {
+  font-style: normal;
+}
+/* 将斜体扶正 */
+code,
+kbd,
+pre,
+samp,
+tt {
+  font-family: "Courier New", Courier, monospace;
+}
+/* 统一等宽字体 */
+small {
+  font-size: 12px;
+}
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+/* 重置列表元素 */
+ul,
+ol {
+  list-style: none;
+}
+/* 重置文本格式元素 */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+abbr[title],
+acronym[title] {
+  /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+q:before,
+q:after {
+  content: '';
+}
+/* 重置表单元素 */
+legend {
+  color: #000;
+}
+/* for ie6 */
+fieldset,
+img {
+  border: none;
+}
+/* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 使得表单元素在 ie 下能继承字体大小 */
+}
+/* 重置表格元素 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 重置 hr */
+hr {
+  border: none;
+  height: 1px;
+}
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html {
+  overflow-y: scroll;
+}
 .my-view {
-  padding: 16px;
+  padding: 8px;
 }
 /** button less 控制 button 字体颜色，大小，padding，背景，边框 */
 .my-button .my-button-primary {
@@ -148,31 +276,31 @@
   border-radius: 50px;
 }
 .my-list .my-list-item {
-  margin: 20px 0 0 0;
-  padding: 40px 32px;
+  margin: 10px 0 0 0;
+  padding: 10px 16px;
   background-color: #fff;
 }
 .my-list .my-list-item .list-item-header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 0 0 30px 0;
+  margin: 0 0 15px 0;
 }
 .my-list .my-list-item .list-item-header .header-main-title-area {
   display: flex;
 }
 .my-list .my-list-item .list-item-header .header-main-title-area .header-title {
-  margin: 0 10px 0 0;
+  margin: 0 5px 0 0;
   font-family: PingFangSC-Regular;
-  font-size: 32px;
+  font-size: 16px;
   color: #333333;
-  line-height: 32px;
+  line-height: 16px;
 }
 .my-list .my-list-item .list-item-header .header-main-title-area .header-brief {
   font-family: PingFangSC-Regular;
-  font-size: 26px;
+  font-size: 13px;
   color: #666666;
-  line-height: 32px;
+  line-height: 16px;
 }
 .my-list .my-list-item .list-item-header .header-main-status-area {
   display: flex;
@@ -182,21 +310,21 @@
 }
 .my-list .my-list-item .list-item-header .header-main-status-area .header-right-title {
   font-family: PingFangSC-Light;
-  font-size: 26px;
+  font-size: 13px;
   color: #666666;
   text-align: right;
-  line-height: 32px;
+  line-height: 16px;
 }
 .my-list .my-list-item .list-item-content .content-item {
   display: flex;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 .my-list .my-list-item .list-item-content .content-item .content-title,
 .my-list .my-list-item .list-item-content .content-item .content-content {
   font-family: PingFangSC-Regular;
-  font-size: 26px;
+  font-size: 13px;
   color: #666666;
-  line-height: 24px;
+  line-height: 12px;
 }
 .my-list .my-list-item .list-item-content .content-item .content-title {
   margin: 0 15px 0 0;
@@ -204,11 +332,48 @@
 .my-list .my-list-item .list-item-content .content-item .list-icon {
   width: 5px;
   height: 5px;
-  margin: 0 30px 0 0;
+  margin: 0 15px 0 0;
 }
 .my-list .my-list-item .list-item-content .content-item :last-child {
   margin: 0;
 }
 .my-list .my-list-item .list-item-content.half {
   width: 50%;
+}
+.my-tag .my-tag-mini {
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 3px;
+}
+.my-tag .my-tag-small {
+  padding: 4px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 3px;
+}
+.my-tag .my-tag-medium {
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.my-tag .my-tag-large {
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.my-tag {
+  display: inline;
+}
+.my-tag span {
+  padding: 4px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  color: #333;
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 3px;
 }

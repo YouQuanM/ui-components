@@ -1,0 +1,48 @@
+@tagSizeList: mini, small, medium, large;
+
+// 循环出按钮size
+.tagSize(@className, @size, @weight, @padding-x, @padding-y, @border-radius) {
+  .my-tag-@{className} {
+    padding: @padding-x @padding-y;
+    font-size: @size;
+    font-weight: @weight;
+    border-radius: @border-radius;
+  }
+}
+
+.my-tagSize(@n) when (@n < length(@tagSizeList)+1){
+  .my-tag when (extract(@tagSizeList, @n) = mini) {
+    .tagSize(extract(@tagSizeList, @n), @my-tag-mini-font, @my-tag-mini-weight, @my-tag-mini-padding-x, @my-tag-mini-padding-y, @my-tag-mini-border-radius)
+  };
+  
+  .my-tag when (extract(@tagSizeList, @n) = small) {
+    .tagSize(extract(@tagSizeList, @n), @my-tag-small-font, @my-tag-small-weight, @my-tag-small-padding-x, @my-tag-small-padding-y, @my-tag-small-border-radius)
+  };
+  
+  .my-tag when (extract(@tagSizeList, @n) = medium) {
+    .tagSize(extract(@tagSizeList, @n), @my-tag-medium-font, @my-tag-medium-weight, @my-tag-medium-padding-x, @my-tag-medium-padding-y, @my-tag-medium-border-radius)
+  };
+  
+  .my-tag when (extract(@tagSizeList, @n) = large) {
+    .tagSize(extract(@tagSizeList, @n), @my-tag-large-font, @my-tag-large-weight, @my-tag-large-padding-x, @my-tag-large-padding-y, @my-tag-large-border-radius)
+  };
+
+  .my-tagSize(@n + 1);
+}
+
+.my-tagSize(0);
+
+.my-tag {
+  display: inline;
+  span {
+    padding: @my-tag-small-padding-x @my-tag-small-padding-y;
+    font-size: @my-tag-small-font;
+    font-weight: @my-tag-small-weight;
+    border-radius: @my-tag-small-border-radius;
+    text-align: center;
+    color: #333;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+}

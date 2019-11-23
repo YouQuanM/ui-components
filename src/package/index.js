@@ -1,9 +1,16 @@
 import Button from './button'
+import Tag from './tag'
 import View from './view'
+import {List, ListContent, ListFooter, ListHeader} from './list'
 
 const components = [
   Button,
-  View
+  View,
+  List, 
+  ListContent, 
+  ListFooter, 
+  ListHeader,
+  Tag
 ]
 function install (Vue) {
   if (install.installed) {
@@ -19,9 +26,9 @@ if (typeof window !== 'undefined' && window.Vue) {
   window.Vue.use(install)
 }
 
-const GlobalComponent = {
+const MyComponent = {
   /* eslint-disable no-undef */
   install
 }
 
-export default GlobalComponent
+export default MyComponent

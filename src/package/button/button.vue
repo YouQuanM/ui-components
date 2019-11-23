@@ -6,7 +6,8 @@
         size ? 'my-button-' + size : '',
         {
           'is-disabled': disabled,
-          'is-round': round
+          'is-round': round,
+          'is-loading': loading
         }
       ]">
        <slot></slot>

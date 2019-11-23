@@ -2,10 +2,10 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import GlobalComponent from './package'
+import MyComponent from './package'
 import './assets/css/reset.css'
-import './assets/css/components/index.css'
-Vue.use(GlobalComponent)
+import './package/style/index.css'
+Vue.use(MyComponent)
 
 Vue.config.productionTip = false
 

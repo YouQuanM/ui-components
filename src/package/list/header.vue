@@ -9,9 +9,9 @@
       </div>
     </div>
     <div class="header-main-status-area">
-      <div class="header-status-tags" v-for="(tagItem, tagIndex) in tagList" :key="tagIndex">
+      <!-- <div class="header-status-tags" v-for="(tagItem, tagIndex) in tagList" :key="tagIndex">
         <my-tag type="activity" :fill="initFill(tagItem.status)" :color="initColor(tagItem.status)" shape="cycle" sharp="left-bottom">{{tagItem.text}}</my-tag>
-      </div>
+      </div> -->
       <div class="header-right-title" v-if="rightTitle">
         <span>{{item[rightTitle]}}</span>
       </div>
@@ -39,10 +39,32 @@ export default {
       this.item = data
     },
     initFill (status) {
-      return '#eee'
+      let fill
+      switch (status) {
+        case 'success':
+          fill = '#46bf50'
+          break
+        case 'fail':
+          fill = '#e64040'
+          break
+        default:
+          break
+      }
+      return fill
     },
     initColor (status) {
-      return '#333'
+      let color
+      switch (status) {
+        case 'success':
+          color = '#666666'
+          break
+        case 'fail':
+          color = '#666666'
+          break
+        default:
+          break
+      }
+      return color
     }
   }
 }
