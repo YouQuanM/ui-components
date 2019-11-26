@@ -1,0 +1,86 @@
+{
+  "id": "1298760",
+  "name": "蛋壳公寓APP",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "售后服务",
+  "glyphs": [
+    {
+      "icon_id": "9874820",
+      "name": "添加照片加号",
+      "font_class": "jiahao",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "9880453",
+      "name": "叹号",
+      "font_class": "tanhao",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "9880655",
+      "name": "感叹号",
+      "font_class": "cycle-tanhao",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "9892821",
+      "name": "返回",
+      "font_class": "return",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "9892822",
+      "name": "对勾",
+      "font_class": "duigou",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "9931553",
+      "name": "308上一页、后退、返回",
+      "font_class": "arrow-left",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "9931554",
+      "name": "309下一页、前进、查看更多",
+      "font_class": "arrow-right",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "10194004",
+      "name": "关闭",
+      "font_class": "round-close",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "10201127",
+      "name": "电话",
+      "font_class": "round-phone",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "10202896",
+      "name": "星星",
+      "font_class": "star",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "11436903",
+      "name": "问号",
+      "font_class": "wenhao",
+      "unicode": "e627",
+      "unicode_decimal": 58919
+    }
+  ]
+}

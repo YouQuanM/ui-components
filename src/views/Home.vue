@@ -19,6 +19,14 @@ export default {
         {
           value: '按钮',
           link: '/sample/my-button'
+        },
+        {
+          value: 'tag',
+          link: '/sample/my-tag'
+        },
+        {
+          value: 'list',
+          link: '/sample/my-list'
         }
       ]
     }
@@ -35,15 +43,16 @@ export default {
 
 <style lang="less" scoped>
 .home-title {
-  font-size: 30px;
-  margin: 20px 0;
+  font-size: 100px;
+  margin: 30px 0;
 }
 .home-brief {
-  margin: 20px 0;
+  margin: 60px 0;
 }
 .guide-list {
   .guide-item {
-    font-size: 20px;
+    margin: 40px 0 0 0;
+    font-size: 28px;
   }
 }
 </style>

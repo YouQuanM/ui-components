@@ -49,11 +49,11 @@ export default {
 <style lang="less" scoped>
 .sample-button-item {
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #f7f7f7;
   p {
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 24px;
+    margin: 20px 0;
   }
 }
 </style>
