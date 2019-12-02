@@ -2,10 +2,10 @@
   <div class="list-item-header">
     <div class="header-main-title-area">
       <div class="header-title" v-if="title">
-        <span>{{item[title]}}</span>
+        <p>{{item[title]}}</p>
       </div>
       <div class="header-brief" v-if="brief">
-        <span>{{item[brief]}}</span>
+        <p>{{item[brief]}}</p>
       </div>
     </div>
     <div class="header-main-status-area">
@@ -13,7 +13,7 @@
         <my-tag type="activity" :fill="initFill(tagItem.status)" :color="initColor(tagItem.status)" shape="cycle" sharp="left-bottom">{{tagItem.text}}</my-tag>
       </div> -->
       <div class="header-right-title" v-if="rightTitle">
-        <span>{{item[rightTitle]}}</span>
+        <p>{{item[rightTitle]}}</p>
       </div>
     </div>
   </div>
@@ -24,20 +24,13 @@ const COMPONENT_NAME = 'my-list-header'
 export default {
   name: COMPONENT_NAME,
   props: {
+    item: Object,
     title: String,
     brief: String,
     tagList: Array,
     rightTitle: String
   },
-  data () {
-    return {
-      item: {}
-    }
-  },
   methods: {
-    initData (data) {
-      this.item = data
-    },
     initFill (status) {
       let fill
       switch (status) {

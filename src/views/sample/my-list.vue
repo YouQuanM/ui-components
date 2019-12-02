@@ -3,19 +3,23 @@
     <my-list
       :list="list"
       @click="onClickHandle">
-      <my-list-header
+      <my-list-column
+        type="header"
         title="title"
         brief="brief"
-        rightTitle="rightTitle"></my-list-header>
-      <my-list-content
+        rightTitle="rightTitle"></my-list-column>
+      <my-list-column
+        type="content"
         label="label1"
-        prop="value1"></my-list-content>
-      <my-list-content
+        prop="value1"></my-list-column>
+      <my-list-column
+        type="content"
         label="label2"
-        prop="value2"></my-list-content>
-      <my-list-content
+        prop="value2"></my-list-column>
+      <my-list-column
+        type="content"
         label="label3"
-        prop="value3"></my-list-content>
+        prop="value3"></my-list-column>
     </my-list>
   </my-view>
 </template>
