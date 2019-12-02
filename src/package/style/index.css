@@ -127,7 +127,7 @@ html {
   overflow-y: scroll;
 }
 .my-view {
-  padding: 32px;
+  padding: 4px 8px;
 }
 /** button less 控制 button 字体颜色，大小，padding，背景，边框 */
 .my-button .my-button-primary {
@@ -366,7 +366,6 @@ html {
 }
 .my-tag {
   display: inline-block;
-  height: 100px;
 }
 .my-tag span {
   padding: 4px 5px;
