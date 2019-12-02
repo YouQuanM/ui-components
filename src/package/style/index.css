@@ -365,7 +365,8 @@ html {
   border-radius: 4px;
 }
 .my-tag {
-  display: inline;
+  display: inline-block;
+  height: 100px;
 }
 .my-tag span {
   padding: 4px 5px;
