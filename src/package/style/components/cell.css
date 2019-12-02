@@ -1,25 +1,41 @@
+.my-cell {
+  padding: 60px 0;
+}
 .my-cell .my-cell-main {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .my-cell .my-cell-main .my-cell-title {
   display: flex;
 }
 .my-cell .my-cell-main .my-cell-title .title-text {
   color: #323233;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 1;
 }
 .my-cell .my-cell-main .my-cell-main-right {
   display: flex;
 }
 .my-cell .my-cell-main .my-cell-main-right .my-cell-value {
   color: #969799;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 1;
 }
 .my-cell .my-cell-label {
   color: #969799;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 22px;
+  line-height: 1;
+}
+.my-cell:active {
+  background: #eeeeee;
+}
+.my-cell-group {
+  padding: 0 40px;
+}
+.my-cell-group .group-title {
+  margin: 0 0 100px 0;
+  color: #969799;
+  font-size: 22px;
+  line-height: 1;
+  text-align: left;
 }

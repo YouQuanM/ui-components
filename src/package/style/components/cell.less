@@ -1,27 +1,42 @@
 .my-cell {
+  padding: 60px 0;
   .my-cell-main {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     .my-cell-title {
       display: flex;
       .title-text {
         color: #323233;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 24px;
+        line-height: 1;
       }
     }
     .my-cell-main-right {
       display: flex;
       .my-cell-value {
         color: #969799;
-        font-size: 14px;
-        line-height: 24px;
+        font-size: 24px;
+        line-height: 1;
       }
     }
   }
   .my-cell-label {
     color: #969799;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 1;
+  }
+  &:active {
+    background: #eeeeee;
+  }
+}
+
+.my-cell-group {
+  padding: 0 40px;
+  .group-title {
+    margin: 0 0 100px 0;
+    color: #969799;
+    font-size: 22px;
+    line-height: 1;
+    text-align: left;
   }
 }
