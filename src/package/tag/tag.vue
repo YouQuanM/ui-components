@@ -1,6 +1,9 @@
 <template>
   <div class="my-tag">
-    <span :class="[size ? 'my-tag-' + size : '']" :style="initStyle"><slot></slot></span>
+    <p :class="[
+      size ? 'my-tag-' + size : '',
+      border ? 'my-tag-has-border' : ''
+    ]" :style="initStyle"><slot></slot></p>
   </div>
 </template>
 
@@ -10,8 +13,15 @@ import { colourBlend } from '../mixin/mixin'
 export default {
   name: COMPONENT_NAME,
   props: {
-    size: String,
-    color: String // color必须使用 #xxxxxx
+    size: {
+      type: String,
+      default: 'small' // 默认small
+    },
+    color: String, // color必须使用 #xxxxxx
+    border: {
+      type: Boolean,
+      default: false
+    }
   },
   computed: {
     initStyle () {
@@ -20,7 +30,7 @@ export default {
         // TODO 加一个判断color是否合法
         let styleMap = new Map()
         styleMap.set('background-color', colourBlend('#ffffff', this.color, 0.15))
-        styleMap.set('border-color', colourBlend('#ffffff', this.color, 0.25))
+        styleMap.set('border-color', colourBlend('#ffffff', this.color, 0.45))
         styleMap.set('color', this.color)
         styleMap.forEach((value ,key) => {
           style = style + key + ':' + value + ';'

@@ -1,7 +1,8 @@
 import Button from './button'
 import Tag from './tag'
 import View from './view'
-import {List, ListContent, ListFooter, ListHeader} from './list'
+// import {List, ListContent, ListFooter, ListHeader} from './list'
+import {List, ListColumn} from './list'
 import Icon from './icon'
 import Cell from './cell'
 
@@ -9,9 +10,10 @@ const components = [
   Button,
   View,
   List, 
-  ListContent, 
-  ListFooter, 
-  ListHeader,
+  ListColumn,
+  // ListContent, 
+  // ListFooter, 
+  // ListHeader,
   Tag,
   Icon,
   Cell

@@ -1,61 +1,61 @@
 .my-list .my-list-item {
-  margin: 10px 0 0 0;
-  padding: 10px 16px;
+  margin: 40px 0 0 0;
+  padding: 40px 54px;
   background-color: #fff;
 }
 .my-list .my-list-item .list-item-header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 0 0 15px 0;
+  margin: 0 0 60px 0;
 }
 .my-list .my-list-item .list-item-header .header-main-title-area {
   display: flex;
 }
-.my-list .my-list-item .list-item-header .header-main-title-area .header-title {
-  margin: 0 5px 0 0;
+.my-list .my-list-item .list-item-header .header-main-title-area .header-title p {
+  margin: 0 20px 0 0;
   font-family: PingFangSC-Regular;
-  font-size: 16px;
+  font-size: 24Px;
   color: #333333;
-  line-height: 16px;
+  line-height: 1;
 }
-.my-list .my-list-item .list-item-header .header-main-title-area .header-brief {
+.my-list .my-list-item .list-item-header .header-main-title-area .header-brief p {
   font-family: PingFangSC-Regular;
-  font-size: 13px;
+  font-size: 20Px;
   color: #666666;
-  line-height: 16px;
+  line-height: 1;
 }
 .my-list .my-list-item .list-item-header .header-main-status-area {
   display: flex;
 }
 .my-list .my-list-item .list-item-header .header-main-status-area .header-status-tags {
-  margin: 0 5px 0 0;
+  margin: 0 20px 0 0;
 }
-.my-list .my-list-item .list-item-header .header-main-status-area .header-right-title {
+.my-list .my-list-item .list-item-header .header-main-status-area .header-right-title p {
   font-family: PingFangSC-Light;
-  font-size: 13px;
+  font-size: 20Px;
   color: #666666;
   text-align: right;
-  line-height: 16px;
+  line-height: 1;
 }
 .my-list .my-list-item .list-item-content .content-item {
   display: flex;
-  margin: 0 0 10px 0;
+  margin: 0 0 40px 0;
 }
-.my-list .my-list-item .list-item-content .content-item .content-title,
-.my-list .my-list-item .list-item-content .content-item .content-content {
+.my-list .my-list-item .list-item-content .content-item .content-title p,
+.my-list .my-list-item .list-item-content .content-item .content-content p {
   font-family: PingFangSC-Regular;
-  font-size: 13px;
+  font-size: 20Px;
   color: #666666;
-  line-height: 12px;
+  line-height: 1;
 }
 .my-list .my-list-item .list-item-content .content-item .content-title {
-  margin: 0 15px 0 0;
+  margin: 0 60px 0 0;
 }
 .my-list .my-list-item .list-item-content .content-item .list-icon {
-  width: 5px;
-  height: 5px;
-  margin: 0 15px 0 0;
+  width: 20px;
+  height: 20px;
+  margin: 0 60px 0 0;
 }
 .my-list .my-list-item .list-item-content .content-item :last-child {
   margin: 0;
