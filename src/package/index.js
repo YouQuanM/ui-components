@@ -2,6 +2,8 @@ import Button from './button'
 import Tag from './tag'
 import View from './view'
 import {List, ListContent, ListFooter, ListHeader} from './list'
+import Icon from './icon'
+import Cell from './cell'
 
 const components = [
   Button,
@@ -10,7 +12,9 @@ const components = [
   ListContent, 
   ListFooter, 
   ListHeader,
-  Tag
+  Tag,
+  Icon,
+  Cell
 ]
 function install (Vue) {
   if (install.installed) {
