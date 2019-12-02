@@ -5,7 +5,7 @@ import View from './view'
 import {List, ListColumn} from './list'
 import Icon from './icon'
 import {Cell, CellGroup} from './cell'
-import Radio from './radio'
+import {Radio, RadioGroup} from './radio'
 
 const components = [
   Button,
@@ -19,7 +19,8 @@ const components = [
   Icon,
   Cell,
   CellGroup,
-  Radio
+  Radio,
+  RadioGroup
 ]
 function install (Vue) {
   if (install.installed) {
