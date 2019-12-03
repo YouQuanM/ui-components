@@ -4,7 +4,8 @@ import View from './view'
 // import {List, ListContent, ListFooter, ListHeader} from './list'
 import {List, ListColumn} from './list'
 import Icon from './icon'
-import Cell from './cell'
+import {Cell, CellGroup} from './cell'
+import {Radio, RadioGroup} from './radio'
 
 const components = [
   Button,
@@ -16,7 +17,10 @@ const components = [
   // ListHeader,
   Tag,
   Icon,
-  Cell
+  Cell,
+  CellGroup,
+  Radio,
+  RadioGroup
 ]
 function install (Vue) {
   if (install.installed) {

@@ -52,7 +52,7 @@ export default {
   padding: 20px 0;
   border-bottom: 1px solid #f7f7f7;
   p {
-    font-size: 24px;
+    font-size: 18px;
     margin: 20px 0;
   }
 }

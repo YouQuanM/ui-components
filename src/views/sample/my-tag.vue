@@ -1,6 +1,10 @@
 <template>
   <my-view>
     <div class="sample-item">
+      <p>size="large"</p>
+      <my-tag size="large">tag</my-tag>
+    </div>
+    <div class="sample-item">
       <p>color="#398bd0" size="large"</p>
       <my-tag color="#398bd0" size="large">tag</my-tag>
     </div>
@@ -35,7 +39,7 @@ export default {
   padding: 20px 0;
   border-bottom: 1px solid #f7f7f7;
   p {
-    font-size: 24px;
+    font-size: 18px;
     margin: 20px 0;
   }
 }
