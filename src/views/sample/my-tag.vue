@@ -5,7 +5,7 @@
       <my-tag size="large">tag</my-tag>
     </div>
     <div class="sample-item">
-      <p>color="#398bd0" size="large"</p>
+      <p>color="#398bd0" size="large" color请使用#xxxxxx</p>
       <my-tag color="#398bd0" size="large">tag</my-tag>
     </div>
     <div class="sample-item">

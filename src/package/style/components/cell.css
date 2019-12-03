@@ -10,7 +10,10 @@
 }
 .my-cell .my-cell-main .my-cell-title .title-text {
   color: #323233;
-  font-size: 24px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.my-cell .my-cell-main .my-cell-title .my-cell-title-icon {
   line-height: 1;
 }
 .my-cell .my-cell-main .my-cell-main-right {
@@ -18,13 +21,18 @@
 }
 .my-cell .my-cell-main .my-cell-main-right .my-cell-value {
   color: #969799;
-  font-size: 24px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.my-cell .my-cell-main .my-cell-main-right .my-cell-arrow {
   line-height: 1;
 }
 .my-cell .my-cell-label {
+  margin: 16px 0 0 0;
   color: #969799;
-  font-size: 22px;
+  font-size: 14px;
   line-height: 1;
+  text-align: left;
 }
 .my-cell:active {
   background: #eeeeee;

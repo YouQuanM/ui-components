@@ -4,12 +4,12 @@
       <h1 class="home-title">导航</h1>
       <div class="guide-list">
         <my-cell-group title="基础组件">
-          <my-cell v-for="(item, index) in sampleList" :key="index" :title="item.title" :value="item.value" is-link :to="item.link"></my-cell>
+          <my-cell v-for="(item, index) in sampleList" :key="index" :title="item.title" :value="item.value" is-link :to="item.link" arrow></my-cell>
         </my-cell-group>
       </div>
       <div class="guide-list">
         <my-cell-group title="业务组件">
-          <my-cell v-for="(item, index) in workComponents" :key="index" :title="item.title" :value="item.value" is-link :to="item.link"></my-cell>
+          <my-cell v-for="(item, index) in workComponents" :key="index" :title="item.title" :value="item.value" is-link :to="item.link" arrow></my-cell>
         </my-cell-group>
         <!-- <div class="guide-item" v-for="(item, index) in sampleList" :key="index" @click="toSamplePage(item.link)">{{index + 1}} - {{item.value}}</div> -->
       </div>
@@ -60,7 +60,7 @@ export default {
 
 <style lang="less" scoped>
 .home-title {
-  font-size: 50px;
+  font-size: 30px;
   margin: 30px 0;
 }
 .home-brief {

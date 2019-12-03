@@ -222,15 +222,15 @@ html {
 }
 .my-button .my-button-mini {
   padding: 32px 70px;
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 500;
-  border-radius: 24px;
+  border-radius: 12px;
 }
 .my-button .my-button-small {
   padding: 48px 80px;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 500;
-  border-radius: 24px;
+  border-radius: 12px;
 }
 .my-button .my-button-medium {
   padding: 60px 100px;
@@ -257,9 +257,9 @@ html {
   background-color: transparent;
   border-color: #a0a0a0;
   padding: 48px 80px;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 500;
-  border-radius: 24px;
+  border-radius: 12px;
 }
 .my-button button.is-disabled,
 .my-button button.is-disabled:active {
@@ -404,7 +404,10 @@ html {
 }
 .my-cell .my-cell-main .my-cell-title .title-text {
   color: #323233;
-  font-size: 24px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.my-cell .my-cell-main .my-cell-title .my-cell-title-icon {
   line-height: 1;
 }
 .my-cell .my-cell-main .my-cell-main-right {
@@ -412,13 +415,18 @@ html {
 }
 .my-cell .my-cell-main .my-cell-main-right .my-cell-value {
   color: #969799;
-  font-size: 24px;
+  font-size: 22px;
+  line-height: 1.2;
+}
+.my-cell .my-cell-main .my-cell-main-right .my-cell-arrow {
   line-height: 1;
 }
 .my-cell .my-cell-label {
+  margin: 16px 0 0 0;
   color: #969799;
-  font-size: 22px;
+  font-size: 14px;
   line-height: 1;
+  text-align: left;
 }
 .my-cell:active {
   background: #eeeeee;

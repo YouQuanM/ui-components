@@ -2,7 +2,9 @@
   <div class="my-cell" @click="onClickHandle">
     <div class="my-cell-main">
       <div class="my-cell-title" v-if="title || icon">
-        <my-icon :name="icon" v-if="icon"></my-icon>
+        <div class="my-cell-title-icon" v-if="icon">
+          <my-icon :name="icon"></my-icon>
+        </div>
         <div class="title-text"><slot name="title">{{title}}</slot></div>
       </div>
       <div class="my-cell-main-right" v-if="value">
