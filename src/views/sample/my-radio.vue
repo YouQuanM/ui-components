@@ -2,7 +2,7 @@
   <div>
     <div class="sample-item">
       <my-radio-group v-model="value">
-        <my-radio name="test1"></my-radio>
+        <my-radio name="test1"></my-radio>generator.js
         <my-radio name="test2"></my-radio>
         <my-radio name="test3"></my-radio>
       </my-radio-group>
